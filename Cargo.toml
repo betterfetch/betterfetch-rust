@@ -1,6 +1,15 @@
 [package]
-name = "betterfetch-rust"
+name = "betterfetch"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+clap = { version = "4.5.4", features = ["derive"] }
+sysinfo = "0.30.12"
+os_info = "3.8.2"
+hostname = "0.4.0"
+users = "0.11.0"
+colored = "2.1.0"
+which = "6.0.1"
+regex = "1.10.6"
+serde = { version = "1.0.210", features = ["derive"] }
