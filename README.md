@@ -1,6 +1,72 @@
-# Betterfetch
-**We are slowly fading to rust !**
+<div align="center">
+  <h1>✨ betterfetch ✨</h1>
+  <p><b>A modern, lightweight, and customizable system fetch tool</b></p>
 
-This is the official rust rewrite of [betterfetch](https://github.com/betterfetch/betterfetch) 
-It was originally written in C++, but I made a decision to use Rust instead of C++
+  <img src="https://img.shields.io/github/license/betterfetch/betterfetch?style=flat-square" alt="License">
+  <img src="https://img.shields.io/github/stars/betterfetch/betterfetch?style=flat-square" alt="Stars">
+  <img src="https://img.shields.io/github/issues/betterfetch/betterfetch?style=flat-square" alt="Issues">
+  <img src="https://img.shields.io/github/forks/betterfetch/betterfetch?style=flat-square" alt="Forks">
 
+  <br/>
+  <img src="https://user-images.githubusercontent.com/your-preview-image.png" alt="betterfetch preview" width="600"/>
+</div>
+
+---
+
+## 📖 About
+
+**betterfetch** is a fast, lightweight, and modern alternative to tools like `neofetch`.  
+It displays useful system information with style ✨ while staying minimal and highly customizable.
+
+- ⚡ **Blazing fast** – written in **Rust** (with a C++ version too)
+- 🖥️ **Cross-platform** – Linux, macOS, Windows (in progress)
+- 🎨 **Customizable** – configure colors, ASCII art, and displayed fields
+- 🧩 **Extensible** – easy to contribute new modules
+
+---
+
+## 📦 Installation
+```bash
+curl https://raw.githubusercontent.com/betterfetch/scripts/refs/heads/main/rs/install.sh | bash
+```
+---
+
+## 🚀 Usage
+```bash
+betterfetch
+```
+
+You’ll see a sleek summary of your system information:
+- OS, Kernel, Uptime
+- CPU, Memory, GPU
+- Disk usage
+- Hostname, Shell, Packages
+
+---
+
+## 🛠️ Development
+
+### Requirements
+- Rust (latest stable)
+- Git
+
+### Run locally
+```bash
+cargo run
+```
+
+---
+
+## 🤝 Contributing
+We love contributions! 🎉 Please check out [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+---
+
+## 📜 License
+[MIT](LICENSE) © 2025 [betterfetch contributors](https://github.com/betterfetch/betterfetch/graphs/contributors)
+
+---
+
+<div align="center">
+Made with ❤️ by the <a href="https://github.com/betterfetch/betterfetch/graphs/contributors">betterfetch community</a>
+</div>
