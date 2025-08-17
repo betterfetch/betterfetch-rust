@@ -16,6 +16,12 @@ struct Args {
     no_ascii: bool,
 }
 
+/// The main function of the program.
+///
+/// Parses command line arguments using `clap` and retrieves system information
+/// using `sysinfo` and `os_info`. Prints various system information such as
+/// username, hostname, operating system, kernel, uptime, CPU, memory, disk
+/// usage, and package count.
 fn main() {
     let args = Args::parse();
 
@@ -125,6 +131,13 @@ fn print_ascii_art(os: &Info) {
     }
 }
 
+/// Detects the number of installed packages.
+///
+/// This function checks for the existence of common package managers and
+/// counts the number of installed packages using their respective commands.
+/// The function returns an `Option<String>`, where the string contains the
+/// package count followed by the package manager name. If no package manager
+/// is found or the command fails, `None` is returned.
 fn detect_package_count() -> Option<String> {
     if which::which("dpkg-query").is_ok() {
         if let Ok(out) = std::process::Command::new("sh")
@@ -178,6 +191,10 @@ fn detect_package_count() -> Option<String> {
     None
 }
 
+// ASCII art for different distributions
+// These are used to display a nice logo based on the detected OS type.
+// The ASCII art is displayed only if the `--no-ascii` flag is not set
+// when running the program.
 const GENERIC_ASCII: &str = r#"
  _          _   _             __      _       _     
 | |__   ___| |_| |_ ___ _ __ / _| ___| |_ ___| |__  
