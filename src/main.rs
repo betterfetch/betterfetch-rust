@@ -92,7 +92,7 @@ fn main() {
     println!("{} {}", "disk".bright_blue(), disk_line);
     println!("{} {}", "packages".bright_blue(), packages);
 }
-
+// sd ;laj' klsajd;kl ajs; kldj;skl ;lj sd a
 fn read_first_line<P: AsRef<Path>>(p: P) -> Option<String> {
     fs::read_to_string(p).ok()?.lines().next().map(|l| l.to_string())
 }
