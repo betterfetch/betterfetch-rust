@@ -81,7 +81,7 @@ fn main() {
     println!("{} {}", "host".bright_blue(), hostname);
     println!("{} {}", "os".bright_blue(), distro_line);
     println!("{} {}", "kernel".bright_blue(), kernel);
-    println!("{} {}", "uptime".bright_blue(), uptime);
+    println!("{} {}", "uptime".bright_red(), uptime);
     println!("{} {} ({} cores)", "cpu".bright_blue(), cpu_name, cpu_cores);
     println!(
         "{} {} MB / {} MB",

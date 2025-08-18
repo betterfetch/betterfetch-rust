@@ -18,8 +18,8 @@
 **betterfetch** is a fast, lightweight, and modern alternative to tools like `neofetch`.  
 It displays useful system information with style ✨ while staying minimal and highly customizable.
 
-- ⚡ **Blazing fast** – written in **Rust** (with a C++ version too)
-- 🖥️ **Cross-platform** – Linux, macOS, Windows (in progress)
+- ⚡ **Blazing fast** – written in **Rust**
+<!-- - 🖥️ **Cross-platform** – Linux, macOS, Windows(?) -->
 - 🎨 **Customizable** – configure colors, ASCII art, and displayed fields
 - 🧩 **Extensible** – easy to contribute new modules
 
@@ -68,5 +68,5 @@ We love contributions! 🎉 Please check out [CONTRIBUTING.md](CONTRIBUTING.md) 
 ---
 
 <div align="center">
-Made with ❤️ by the <a href="https://github.com/betterfetch/betterfetch/graphs/contributors">betterfetch community</a>
+Made with ❤️ by <a href="https://github.com/DavidBalishyan">David Balishyan</a>
 </div>
