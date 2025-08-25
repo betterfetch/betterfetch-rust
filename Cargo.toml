@@ -1,7 +1,16 @@
 [package]
 name = "betterfetch" # !! The compiled binary will have this name !!
-version = "0.1.0"
+version = "0.1.0" # !! The --version will output this !!
 edition = "2024" 
+build = "build.rs"
+authors = ["David Balishyan <davidbalishyan12@gmail.com>"]
+rust-version = "1.88.0"
+readme="README.md"
+homepage = "https://betterfetch.github.io"
+license = "MIT"
+repository = "https://github.com/betterfetch/betterfetch" 
+
+
 
 [dependencies]
 clap = { version = "4.5.4", features = ["derive"] }

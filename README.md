@@ -7,8 +7,8 @@
   <img src="https://img.shields.io/github/issues/betterfetch/betterfetch?style=flat-square" alt="Issues">
   <img src="https://img.shields.io/github/forks/betterfetch/betterfetch?style=flat-square" alt="Forks">
 
-  <br/>
-  <img src="https://user-images.githubusercontent.com/your-preview-image.png" alt="betterfetch preview" width="600"/>
+  <!-- <br/>
+  <img src="https://user-images.githubusercontent.com/your-preview-image.png" alt="betterfetch preview" width="600"/> -->
 </div>
 
 ---
@@ -18,8 +18,7 @@
 **betterfetch** is a fast, lightweight, and modern alternative to tools like `neofetch`.  
 It displays useful system information with style ✨ while staying minimal and highly customizable.
 
-- ⚡ **Blazing fast** – written in **Rust**
-<!-- - 🖥️ **Cross-platform** – Linux, macOS, Windows(?) -->
+- ⚡ **Blazing fast** – written in **Rust**<!-- - 🖥️ **Cross-platform** – Linux, macOS, Windows(?) -->
 - 🎨 **Customizable** – configure colors, ASCII art, and displayed fields
 - 🧩 **Extensible** – easy to contribute new modules
 
