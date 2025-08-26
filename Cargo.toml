@@ -3,10 +3,10 @@ name = "betterfetch" # !! The compiled binary will have this name !!
 version = "0.1.0" # !! The --version will output this !!
 edition = "2024" 
 build = "build.rs"
-authors = ["David Balishyan <davidbalishyan12@gmail.com>"]
 rust-version = "1.88.0"
-readme="README.md"
+authors = ["David Balishyan <davidbalishyan12@gmail.com>"]
 homepage = "https://betterfetch.github.io"
+readme="README.md"
 license = "MIT"
 repository = "https://github.com/betterfetch/betterfetch" 
 
