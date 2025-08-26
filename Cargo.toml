@@ -1,6 +1,6 @@
 [package]
 name = "betterfetch" # !! The compiled binary will have this name !!
-version = "0.1.0" # !! The --version will output this !!
+version = "0.1.2" # !! The --version will output this !!
 edition = "2024" 
 build = "build.rs"
 rust-version = "1.88.0"
