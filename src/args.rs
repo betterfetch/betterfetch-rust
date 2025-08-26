@@ -1,7 +1,6 @@
 use clap::Parser;
 
-const LONG_ABOUT: &str = 
-"
+const LONG_ABOUT: &str = "
 A fast system information fetcher written in Rust.
 github repo: https://github.com/betterfetch/betterfetch
 websit: https://betterfetch.github.io
@@ -20,4 +19,3 @@ pub struct Args {
     #[arg(short, long)]
     pub no_ascii: bool,
 }
-

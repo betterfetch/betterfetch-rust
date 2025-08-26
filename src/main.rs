@@ -1,15 +1,15 @@
 mod args;
 mod ascii;
+mod packages;
 mod system;
 mod utils;
-mod packages;
 
 use args::Args;
+use ascii::print_ascii_art;
 use clap::Parser;
 use colored::*;
-use system::SystemInfo;
-use ascii::print_ascii_art;
 use packages::detect_package_count;
+use system::SystemInfo;
 
 fn main() {
     let args = Args::parse();

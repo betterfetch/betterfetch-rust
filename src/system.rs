@@ -4,7 +4,7 @@ use std::path::Path;
 use sysinfo::{Disks, System};
 use users::{get_current_uid, get_user_by_uid};
 
-use crate::utils::{read_first_line, read_uptime, format_duration};
+use crate::utils::{format_duration, read_first_line, read_uptime};
 
 pub struct SystemInfo {
     pub os: Info,
@@ -36,8 +36,8 @@ impl SystemInfo {
             .map(|u| u.name().to_string_lossy().into_owned())
             .unwrap_or_else(|| "unknown".into());
 
-        let kernel = read_first_line("/proc/version")
-            .unwrap_or_else(|| "kernel info unavailable".into());
+        let kernel =
+            read_first_line("/proc/version").unwrap_or_else(|| "kernel info unavailable".into());
 
         let uptime = read_uptime()
             .map(format_duration)

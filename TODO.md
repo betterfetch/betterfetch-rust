@@ -9,3 +9,7 @@
 [x] Uptime and load: Show system uptime and load averages.
 [x] Package count: Display number of installed packages (for popular distros).
 [x] Operating system logo: Show OS logo as ASCII art.
+
+
+## Non-project related
+[] Add /.github and the contents needed
