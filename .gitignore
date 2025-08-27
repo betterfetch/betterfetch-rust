@@ -1,2 +1,14 @@
 /target
 **/build_info.rs
+
+
+# For JetBrains users
+.idea/
+.idea/*
+
+# For vscode users
+.vscode/
+.vscode/*
+
+# No need for a dotfolder for neovim users
+# Neovim users are chads
