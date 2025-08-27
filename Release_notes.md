@@ -12,4 +12,4 @@ Added: Some minor features and bug fixes
 
 ### 🔧 Maintenance
 - Updated some dependencies
-## v0.1.2 (coming in 27/08/2025)
+## v0.1.2 (coming in 28/08/2025)
