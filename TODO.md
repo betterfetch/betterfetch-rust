@@ -2,7 +2,6 @@
 [] Customizable output: Allow users to choose which system info fields to display.
 [] Theme/Color support: Enable color schemes or ASCII art themes.
 [] Network info: Display IP addresses, MAC, and active interfaces.
-[] Config file support: Allow persistent user configuration.
 [] Minimal mode: Output only essential info for scripts.
 
 
@@ -13,3 +12,7 @@
 
 ## Non-project related
 [] Add /.github and the contents needed
+
+
+## Working on ... 
+[] Config file support: Allow persistent user configuration.
