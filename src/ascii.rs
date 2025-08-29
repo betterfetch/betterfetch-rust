@@ -1,5 +1,6 @@
 use os_info::Info;
 
+
 pub fn print_ascii_art(os: &Info) {
     let name = os.os_type().to_string().to_lowercase();
     if name.contains("ubuntu") {

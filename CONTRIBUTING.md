@@ -12,7 +12,7 @@ We want to make contributing as easy and transparent as possible.
 
 2. **Clone your fork**  
    ```bash
-   git clone https://github.com/betterfetch/betterfetch.git
+   git clone https://github.com/YOUR_USERNAME/betterfetch.git
    cd betterfetch
    ```
 
@@ -22,7 +22,7 @@ We want to make contributing as easy and transparent as possible.
    ```
 
 4. **Make your changes**  
-   - Follow code style (Rust: `cargo fmt`)
+   - Follow code style
    - Add/update documentation if needed
    - Test your changes locally
 
@@ -34,15 +34,14 @@ We want to make contributing as easy and transparent as possible.
    ```
 
 6. **Open a Pull Request**  
-   Go to the original repo and open a PR 🚀
+   Go to the repo and open a PR 🚀
 
 ---
 
 ## 🧾 Code Style
 
-- **Rust**
-  - Run `cargo fmt` before committing
-  - Lint with `cargo clippy`
+- Run `just fmt` before committing
+- Lint with `just lint`
 
 ---
 
@@ -50,8 +49,7 @@ We want to make contributing as easy and transparent as possible.
 
 - Keep PRs **focused** on one change
 - Add tests where applicable
-- Update the **README** or **docs** if functionality changes
-- Ensure CI passes (formatting, linting, build)
+- Update the **README** if functionality changes
 
 ---
 
@@ -60,8 +58,6 @@ We want to make contributing as easy and transparent as possible.
 Found a bug?  
 - Open a [GitHub Issue](https://github.com/betterfetch/betterfetch/issues/new)
 - Include details:
-  - OS / Distro
-  - Rust/C++ version
   - Steps to reproduce
   - Expected vs actual behavior
 

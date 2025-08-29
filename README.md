@@ -26,7 +26,7 @@ It displays useful system information with style ✨ while staying minimal and h
 
 ## 📦 Installation
 ```bash
-curl https://raw.githubusercontent.com/betterfetch/scripts/refs/heads/main/rs/install.sh | bash
+curl https://betterfetch.github.io/scripts/rs/install.sh | bash
 ```
 ---
 
