@@ -11,6 +11,7 @@
   <img src="https://user-images.githubusercontent.com/your-preview-image.png" alt="betterfetch preview" width="600"/> -->
 </div>
 
+
 ---
 
 ## 📖 About
@@ -64,6 +65,7 @@ We love contributions! 🎉 Please check out [CONTRIBUTING.md](CONTRIBUTING.md) 
 ## 📜 License
 [MIT](LICENSE) © 2025 [betterfetch contributors](https://github.com/betterfetch/betterfetch/graphs/contributors)
 
+### Warning: We do not host binaries for arm-based systems, you have to build the project from source yourself
 ---
 
 <div align="center">
