@@ -2,7 +2,7 @@
 ## v0.1.0
 The first official release of betterfetch(rust)
 [https://github.com/betterfetch/betterfetch/releases/tag/releases](https://github.com/betterfetch/betterfetch/releases/tag/releases)
-## v0.1.1 (unlisted release. not in github releases)
+## v0.1.2
 Added: Some minor features and bug fixes
 ### 🚀 Features
 - This is a minor update, so there is no new feature
@@ -12,4 +12,7 @@ Added: Some minor features and bug fixes
 
 ### 🔧 Maintenance
 - Updated some dependencies
-## v0.1.2 (comming soon...) 
+
+### DX
+- Started using editorconfig and just
+## v0.1.3 (comming soon...)

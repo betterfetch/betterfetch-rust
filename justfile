@@ -1,13 +1,14 @@
+# Cargo run
 default:
-    just build
+	cargo run
 
 # Build the project in release mode
 build:
     cargo build --release
 
 # Run the project from source
-# run:
-# cargo run -- {{ARGS}}
+run:
+	cargo run
 
 # Install the binary globally
 install:
