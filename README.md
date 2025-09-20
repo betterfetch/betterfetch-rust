@@ -20,7 +20,7 @@
 It displays useful system information with style ✨ while staying minimal and highly customizable.
 
 - ⚡ **Blazing fast** – written in **Rust**<!-- - 🖥️ **Cross-platform** – Linux, macOS, Windows(?) -->
-- 🎨 **Customizable** – configure colors, ASCII art, and displayed fields
+<!--- 🎨 **Customizable** – configure colors, ASCII art, and displayed fields-->
 - 🧩 **Extensible** – easy to contribute new modules
 
 ---
