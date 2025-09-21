@@ -1,3 +1,5 @@
+>[!NOTE]
+>There is an official mirror of this repo on Codeberg: https://codeberg.com/DavidBalishyan/betterfetch>
 <div align="center">
   <h1>✨ betterfetch ✨</h1>
   <p><b>A modern, lightweight, and customizable system fetch tool</b></p>
