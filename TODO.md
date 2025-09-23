@@ -16,3 +16,4 @@
 
 ## Working on ... 
 [] Config file support: Allow persistent user configuration.
+[] Add /.github and the contents needed
