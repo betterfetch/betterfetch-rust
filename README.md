@@ -1,5 +1,6 @@
 >[!NOTE]
 >There is an official mirror of this repo on Codeberg: https://codeberg.org/DavidBalishyan/betterfetch
+
 <div align="center">
   <h1>✨ betterfetch ✨</h1>
   <p><b>A modern, lightweight, and customizable system fetch tool</b></p>
@@ -22,8 +23,15 @@
 It displays useful system information with style ✨ while staying minimal and highly customizable.
 
 - ⚡ **Blazing fast** – written in **Rust**<!-- - 🖥️ **Cross-platform** – Linux, macOS, Windows(?) -->
-<!--- 🎨 **Customizable** – configure colors, ASCII art, and displayed fields-->
+- 🎨 **Customizable** – configure colors, ASCII art, and displayed fields
 - 🧩 **Extensible** – easy to contribute new modules
+
+--- 
+
+## Documenatation
+
+The documentation for `betterfetch` can be found in the `docs/` folder of the repo.
+
 
 ---
 
@@ -43,6 +51,11 @@ You’ll see a sleek summary of your system information:
 - CPU, Memory, GPU
 - Disk usage
 - Hostname, Shell, Packages
+
+---
+
+## User Configuration
+for user configuarion see `docs/config.md`
 
 ---
 

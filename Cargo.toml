@@ -1,14 +1,14 @@
 [package]
 name = "betterfetch" # !! The compiled binary will have this name !!
-version = "0.1.2" # !! The --version will output this !!
-edition = "2024" 
+version = "0.1.3" # !! The --version will output this !!
+edition = "2024"
 build = "build.rs"
 rust-version = "1.88.0"
 authors = ["David Balishyan <davidbalishyan12@gmail.com>"]
 homepage = "https://betterfetch.github.io"
 readme="README.md"
 license = "MIT"
-repository = "https://github.com/betterfetch/betterfetch" 
+repository = "https://github.com/betterfetch/betterfetch"
 
 
 
@@ -17,8 +17,10 @@ clap = { version = "4.5.4", features = ["derive"] }
 sysinfo = "0.30.12"
 os_info = "3.8.2"
 hostname = "0.4.0"
-users = "0.11.0" 
+users = "0.11.0"
 colored = "2.1.0"
-which = "6.0.1" 
+which = "6.0.1"
 regex = "1.10.6"
 serde = { version = "1.0.210", features = ["derive"] }
+dirs = "6.0.0"
+toml = "0.9.7"

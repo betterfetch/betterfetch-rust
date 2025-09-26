@@ -15,4 +15,13 @@ Added: Some minor features and bug fixes
 
 ### DX
 - Started using editorconfig and just
-## v0.1.3 (comming soon...)
+## v0.1.3 (Official release: 27/09/2025) 
+Added: config file support
+### 🚀 Features
+- Config file support using the toml language
+
+### 🔧 Maintenance
+- Updated some dependencies
+
+### DX
+- There are not DX improvments (yet)
