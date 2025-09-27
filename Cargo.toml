@@ -2,7 +2,7 @@
 name = "betterfetch" # !! The compiled binary will have this name !!
 version = "0.1.3" # !! The --version will output this !!
 edition = "2024"
-build = "build.rs"
+# build = "build.rs"
 rust-version = "1.88.0"
 authors = ["David Balishyan <davidbalishyan12@gmail.com>"]
 homepage = "https://betterfetch.github.io"
