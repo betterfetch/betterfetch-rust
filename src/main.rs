@@ -1,22 +1,22 @@
 mod args;
 mod ascii;
+mod config;
 mod packages;
 mod system;
 mod utils;
-mod config;
 
 use args::Args;
 use ascii::print_ascii_art;
 use clap::Parser;
 use colored::*;
+use config::Config;
 use packages::detect_package_count;
 use system::SystemInfo;
-use config::Config;
 
 fn main() {
-    let config = Config::load();
-    let args = Args::parse();
-    let sys = SystemInfo::gather();
+    let config: Config= Config::load();
+    let args: Args = Args::parse();
+    let sys: SystemInfo = SystemInfo::gather();
 
     // ========== ASCII ART ==========
     if !args.no_ascii {
