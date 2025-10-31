@@ -29,3 +29,16 @@ fmt:
 # Clean build artifacts
 clean:
     cargo clean
+
+# Generate documentation using the default cargo doc
+doc:
+    cargo doc
+
+# git status
+stat:
+	git status
+
+# just clean && just build
+b:
+    just clean
+    just build

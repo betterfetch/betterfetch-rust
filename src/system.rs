@@ -14,6 +14,8 @@ pub struct SystemInfo {
     pub kernel: String,
     pub uptime: String,
     pub cpu_name: String,
+    #[allow(dead_code)]
+    // FIXME: See the next FIXME (related to cpu info)
     pub cpu_cores: usize,
     pub total_mem_mb: u64,
     pub used_mem_mb: u64,
@@ -42,9 +44,10 @@ impl SystemInfo {
         let uptime = read_uptime()
             .map(format_duration)
             .unwrap_or_else(|| "unknown".into());
-
+        // FIXME: The CPU name prints empty string
         let cpu_name = sys.global_cpu_info().brand().to_string();
         let cpu_cores = sys.physical_core_count().unwrap_or(0);
+        // FIXME: The CPU core count returns wrong number (idk why?)
         let total_mem_mb = sys.total_memory() / 1024;
         let used_mem_mb = sys.used_memory() / 1024;
 

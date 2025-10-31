@@ -6,6 +6,7 @@
 ## Working on ... 
 
 [] Add /.github and the contents needed
+[] Show the correct CPU name and the core count
 
 ## Finished
 

@@ -10,8 +10,6 @@
   <img src="https://img.shields.io/github/issues/betterfetch/betterfetch?style=flat-square" alt="Issues">
   <img src="https://img.shields.io/github/forks/betterfetch/betterfetch?style=flat-square" alt="Forks">
 
-  <!-- <br/>
-  <img src="https://user-images.githubusercontent.com/your-preview-image.png" alt="betterfetch preview" width="600"/> -->
 </div>
 
 
@@ -34,7 +32,9 @@ The documentation for `betterfetch` can be found in the `docs/` folder of the re
 
 
 ---
-
+>[!WARNING]
+>We don't host binaries for platforms other than x86_64.
+>The install script builds the project on your local machine so It's recommended to use the script for the latest version and for compatability with platforms other than x86_64
 ## 📦 Installation
 ```bash
 curl https://betterfetch.github.io/scripts/rs/install.sh | bash
@@ -80,7 +80,6 @@ We love contributions! 🎉 Please check out [CONTRIBUTING.md](CONTRIBUTING.md) 
 ## 📜 License
 [MIT](LICENSE) © 2025 [betterfetch contributors](https://github.com/betterfetch/betterfetch/graphs/contributors)
 
-### Warning: We do not host binaries for arm-based systems, you have to build the project from source yourself
 ---
 
 <div align="center">

@@ -14,7 +14,7 @@ use packages::detect_package_count;
 use system::SystemInfo;
 
 fn main() {
-    let config: Config= Config::load();
+    let config: Config = Config::load();
     let args: Args = Args::parse();
     let sys: SystemInfo = SystemInfo::gather();
 
@@ -50,12 +50,14 @@ fn main() {
             "os" => println!("{} {}", color_title("os", &config), sys.distro_line),
             "kernel" => println!("{} {}", color_title("kernel", &config), sys.kernel),
             "uptime" => println!("{} {}", color_title("uptime", &config), sys.uptime),
+            // FIXME: See the src/system.rs file
             "cpu" => println!(
-                "{} {} ({} cores)",
+                "{} {} ({}cores)",
                 color_title("cpu", &config),
                 sys.cpu_name,
                 sys.cpu_cores
             ),
+
             "memory" => println!(
                 "{} {} MB / {} MB",
                 color_title("memory", &config),
@@ -82,4 +84,3 @@ fn color_title(title: &str, config: &Config) -> String {
     }
     title.bright_blue().to_string()
 }
-
