@@ -62,7 +62,7 @@ Available modules:
 - disk - Disk usage line
 - packages - Installed package count
 
-## 🖼 ASCII Art
+## ASCII Art
 
 Use ''' triple single quotes for ASCII art (best for backslashes).
 

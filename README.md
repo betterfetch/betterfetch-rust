@@ -2,7 +2,7 @@
 >There is an official mirror of this repo on Codeberg: https://codeberg.org/DavidBalishyan/betterfetch
 
 <div align="center">
-  <h1>✨ betterfetch ✨</h1>
+  <h1>✨ Betterfetch ✨</h1>
   <p><b>A modern, lightweight, and customizable system fetch tool</b></p>
 
   <img src="https://img.shields.io/github/license/betterfetch/betterfetch?style=flat-square" alt="License">
@@ -78,7 +78,9 @@ We love contributions! 🎉 Please check out [CONTRIBUTING.md](CONTRIBUTING.md) 
 ---
 
 ## 📜 License
-[ZPL-2.1 (Zope Public License 2.1)](LICENSE) © 2025 [betterfetch contributors](https://github.com/betterfetch/betterfetch/graphs/contributors)
+[GPL-3.0 GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html) © 2025 [betterfetch contributors](https://github.com/betterfetch/betterfetch/graphs/contributors)
+
+[See LICNESE file](LICENSE)
 
 ---
 
