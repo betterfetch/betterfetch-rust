@@ -29,7 +29,7 @@ fn main() {
             "user".into(),
             "host".into(),
             "os".into(),
-            // "kernel".into(),
+            "kernel".into(),
             "uptime".into(),
             "cpu".into(),
             "memory".into(),
@@ -55,7 +55,7 @@ fn main() {
                 info_lines.push(format!("{} {}", color_title("uptime", &config), sys.uptime))
             }
             "cpu" => info_lines.push(format!(
-                "{} {} ({}cores)",
+                "{} {} ({} cores)",
                 color_title("cpu", &config),
                 sys.cpu_name,
                 sys.cpu_cores
@@ -137,11 +137,11 @@ fn main() {
 
 /// Apply color settings from config, fallback to bright_blue
 fn color_title(title: &str, config: &Config) -> String {
-    if let Some(colors) = &config.colors {
-        if let Some(ref color) = colors.title {
-            // try to apply configured color (basic names like "red", "green")
-            return title.color(color.as_str()).to_string();
-        }
+    if let Some(colors) = &config.colors
+        && let Some(ref color) = colors.title
+    {
+        // try to apply configured color (basic names like "red", "green")
+        return title.color(color.as_str()).to_string();
     }
     title.bright_blue().to_string()
 }

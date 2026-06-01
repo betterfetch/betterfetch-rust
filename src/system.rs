@@ -1,5 +1,6 @@
 use hostname::get as get_hostname;
 use os_info::{self, Info};
+use std::fs;
 use std::path::Path;
 use sysinfo::{Disks, System};
 use users::{get_current_uid, get_user_by_uid};
@@ -15,8 +16,6 @@ pub struct SystemInfo {
     pub kernel: String,
     pub uptime: String,
     pub cpu_name: String,
-    #[allow(dead_code)]
-    // FIXME: See the next FIXME (related to cpu info)
     pub cpu_cores: usize,
     pub total_mem_mb: u64,
     pub used_mem_mb: u64,
@@ -40,16 +39,30 @@ impl SystemInfo {
             .map(|u| u.name().to_string_lossy().into_owned())
             .unwrap_or_else(|| "unknown".into());
 
-        let kernel =
-            read_first_line("/proc/version").unwrap_or_else(|| "kernel info unavailable".into());
+        let kernel = read_first_line("/proc/version")
+            .and_then(|s| s.split_whitespace().nth(2).map(|v| v.to_string()))
+            .unwrap_or_else(|| "kernel info unavailable".into());
 
         let uptime = read_uptime()
             .map(format_duration)
             .unwrap_or_else(|| "unknown".into());
-        // FIXME: The CPU name prints empty string
-        let cpu_name = sys.global_cpu_info().brand().to_string();
-        let cpu_cores = sys.physical_core_count().unwrap_or(0);
-        // FIXME: The CPU core count returns wrong number (idk why?)
+        let cpu_name = {
+            let brand = sys.global_cpu_info().brand().to_string();
+            if brand.is_empty() {
+                fs::read_to_string("/proc/cpuinfo")
+                    .ok()
+                    .and_then(|s| {
+                        s.lines()
+                            .find(|l| l.starts_with("model name"))
+                            .and_then(|l| l.split(':').nth(1))
+                            .map(|s| s.trim().to_string())
+                    })
+                    .unwrap_or_else(|| "Unknown CPU".to_string())
+            } else {
+                brand
+            }
+        };
+        let cpu_cores = sys.cpus().len();
         let total_mem_mb = sys.total_memory() / 1024;
         let used_mem_mb = sys.used_memory() / 1024;
 

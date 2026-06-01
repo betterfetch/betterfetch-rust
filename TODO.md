@@ -12,5 +12,5 @@ $ todos.sh help
 [x] Operating system logo: Show OS logo as ASCII art.
 [x] Minimal mode: Output only essential info for scripts.
 [x] Make the ascii and the info display side-by-side
-[x] Show the current battery percentage on laptops[x] Add a github action workflow to automatically mirror to codeberg, when a commit is pushed to github
+[x] Show the current battery percentage on laptops
 [x] Add a github action workflow to automatically mirror to codeberg, when a commit is pushed to github
