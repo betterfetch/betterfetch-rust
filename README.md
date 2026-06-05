@@ -78,7 +78,7 @@ We love contributions! 🎉 Please check out [CONTRIBUTING.md](CONTRIBUTING.md) 
 ---
 
 ## 📜 License
-[GPL-3.0 GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.html) © 2025 [betterfetch contributors](https://github.com/betterfetch/betterfetch/graphs/contributors)
+[GPL-3.0 GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.html) © 2025 [betterfetch contributors](https://github.com/betterfetch/betterfetch/graphs/contributors)
 
 [See LICNESE file](LICENSE)
 

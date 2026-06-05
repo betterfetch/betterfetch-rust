@@ -1,8 +1,12 @@
 #!/usr/bin/env -S just --justfile
 
+# Run the `help` recipe
+[group('General')]
+default: help
+
 # List available recipes
 [group('General')]
-default:
+help:
     @just --list
 
 # Build the project in release mode

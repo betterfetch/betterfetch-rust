@@ -1,11 +1,11 @@
-# 🤝 Contributing to betterfetch
+# Contributing to betterfetch
 
-First off, thanks for your interest in contributing to **betterfetch**! 🎉  
+First off, thanks for your interest in contributing to **betterfetch**!
 We want to make contributing as easy and transparent as possible.
 
 ---
 
-## 🧑‍💻 How to Contribute
+## How to Contribute
 
 1. **Fork the repo**  
    Click the **Fork** button at the top right of this repository.
@@ -34,18 +34,31 @@ We want to make contributing as easy and transparent as possible.
    ```
 
 6. **Open a Pull Request**  
-   Go to the repo and open a PR 🚀
+   Go to the repo and open a PR
+
+---
+   - Test your changes locally
+
+5. **Commit & push**  
+   ```bash
+   git add .
+   git commit -m "Added: new feature description"
+   git push origin feature/my-new-feature
+   ```
+
+6. **Open a Pull Request**  
+   Go to the repo and open a PR
 
 ---
 
-## 🧾 Code Style
+## Code Style
 
-- Run `just fmt` before committing
+- Run `just ci` before committing
 - Lint with `just lint`
 
 ---
 
-## ✅ Pull Request Guidelines
+## Pull Request Guidelines
 
 - Keep PRs **focused** on one change
 - Add tests where applicable
@@ -53,7 +66,7 @@ We want to make contributing as easy and transparent as possible.
 
 ---
 
-## 🐛 Reporting Issues
+## Reporting Issues
 
 Found a bug?  
 - Open a [GitHub Issue](https://github.com/betterfetch/betterfetch/issues/new)
@@ -63,13 +76,13 @@ Found a bug?
 
 ---
 
-## 💡 Suggestions & Features
+## Suggestions & Features
 
 Have an idea for improvement?  
 Open a **Discussion** or **Feature Request** issue. We’d love to hear your thoughts!
 
 ---
 
-## 📜 License
+## License
 
-By contributing, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+By contributing, you agree that your contributions will be licensed under the [GNU General public license version 3](LICENSE).

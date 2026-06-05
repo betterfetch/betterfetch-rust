@@ -1,7 +1,7 @@
 # Betterfetch Configuration
 Betterfetch supports a user configuration file to customize ASCII art, shown modules, and colors.
 
-## 📂 Config File Location
+## Config File Location
 
 By default, Betterfetch looks for:
 
@@ -10,7 +10,7 @@ $HOME/.config/betterfetch/config.toml
 ```
 If the file doesn’t exist, defaults are used.
 
-## ⚙️ Config Format
+## Config Format
 
 The config file uses [TOML](https://toml.io)
 ```toml
@@ -32,7 +32,7 @@ modules = ["user", "host", "os", "kernel", "cpu", "memory", "disk", "packages"]
 title = "yellow"   # Color for field names
 ```
 
-## 🎨 Colors
+## Colors
 
 Colors are powered by the [colored](https://crates.io/crates/colored) crate.
 <br/>
@@ -48,7 +48,7 @@ You can use basic color names:
 - white
 
 
-## 🔧 Modules
+## Modules
 
 Available modules:
 
@@ -81,7 +81,7 @@ ascii_art = '''
 '''
 ```
 
-## 📌 Roadmap
+## Roadmap
 
 Planned config features:
 

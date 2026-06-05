@@ -4,7 +4,7 @@ const LONG_ABOUT: &str = "
 A fast system information fetcher written in Rust.
 github repo: https://github.com/betterfetch/betterfetch
 website: https://betterfetch.github.io
-License: ZPL-2.1
+License: GPLv3
 ";
 
 #[derive(Parser, Debug)]
