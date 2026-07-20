@@ -22,6 +22,14 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan codeberg.org >> ~/.ssh/known_hosts
 
+      - name: Trim Codeberg note from README
+        run: |
+          sed -i '/^> \[!NOTE\]/,/^$/d' README.md
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "trim Codeberg mirror note for Codeberg"
+
       - name: Mirror push to Codeberg
         run: |
           git remote add codeberg git@codeberg.org:DavidBalishyan/betterfetch.git
